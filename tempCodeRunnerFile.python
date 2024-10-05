@@ -1,0 +1,14 @@
+class Error(Exception):
+    pass
+class DOBEXCEPTION(Error):
+    pass
+
+year = int(input("enter no"))
+a= 2021-year
+try:
+    if a<=30 & a>20:
+        print("valid ")
+    else:
+        raise DOBEXCEPTION
+except DOBEXCEPTION:
+    print("invalid age")    
